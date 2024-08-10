@@ -9,11 +9,7 @@ $(document).ready(function () {
 
   // Function to handle the "Create" action
   function handleCreate() {
-    if (typeof create === "function") {
-      create();
-    } else {
-      errorResponse("funcNotFound");
-    }
+    alert("Open form");
   }
 
   // Function to handle the "Save" action
@@ -64,11 +60,4 @@ $(document).ready(function () {
       errorResponse("funcNotFound");
     }
   }
-
-  // Action Functions
-  function create() {
-    alert("Open form");
-  }
-
-  // Error Response
-}); // document ready ends here
+});
