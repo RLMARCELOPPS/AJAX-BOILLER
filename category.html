@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Table Example</title>
+    <!-- Add this to the head of your HTML document -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="loader.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="table.js"></script>
+    <script src="category.js"></script>
+    <script src="apiResponse.js"></script>
+
+    <!-- Correctly close the script tag -->
+  </head>
+  <body>
+    <button id="btn-create">Create</button>
+    <button id="btn-edit">Edit</button>
+    <button id="btn-save">Save</button>
+    <button id="btn-update">update</button>
+    <button id="btn-delete">Delete</button>
+
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added dynamically -->
+      </tbody>
+    </table>
+  </body>
+</html>
+<div id="loader" class="container">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
